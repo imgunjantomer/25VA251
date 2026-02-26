@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //JS data value types in JS
+        //primitive-single value variable which are immutable
+        //string number boolean undefined null  binit symbol
+        var myName="Gunnu";
+        console.log(myName);
+        console.log(typeof(myName));
+
+        //number
+        var myMob=56789;
+        console.log(myName +" mobile number is " + myMob);
+
+        //Boolean
+        var isMarried=false;
+        console.log(myName + " is married ? " + isMarried);
+
+        //Undefined
+        var myEmail;
+        console.log(myEmail);
+        console.log(typeof(myEmail));
+
+        //null
+        var myAddress=null;
+        console.log(myAddress);
+        console.log(typeof(myAddress));
+
+        //Bigint (to handle large number)
+        var myVal=BigInt(987654321123456789);
+        console.log(myVal);
+        console.log(typeof(myVal));
+
+        //symbol
+
+        var name1=Symbol("Cherry");
+        var name2=Symbol("Cherry");
+        console.log(name1==name2);
+
+        //referene(object) typed==mutable inmemory and keeps values in pair
+        //object, function, array
+
+        //Objects are defined in pair of key and its value
+
+        let myInfo={
+            name:"Anushka", age:19, isMarried:false, mob:345783356, add:null, branch:"CSE", section:15
+        };
+        console.log(myInfo);
+        console.log(myInfo.name);  //access object's key i.e name
+        
+        //object length
+        let keys = Object.keys(myInfo);
+        console.log("myInfo Object length " + keys.length);
+
+
+        //function- block of code that perform particular task
+        function cal(){
+            var num1=23;
+            var num2=40;
+            var num3=45;
+            var num4=33;
+            var res=num1+num2+num3+num4;
+            console.log("Addition of two numbers is " + res);
+            console.log(typeof(cal));
+        }
+        cal();
+
+        //array - collection of any data types in JS
+
+        //for similar data types
+        let studentList=["Hansika", "Himani", "Gungun", "Anushka"];
+        console.log(studentList[1]);
+
+        //for any data types
+        let HansikaInfo=["Haniska Singh", 18, false, null, "CSE", 23];
+        console.log(HansikaInfo[1]);
+        console.log(typeof(HansikaInfo));
+
+        //to iterate any number
+        for(let i=0; i<HansikaInfo.length;i++)
+        {
+            console.log(HansikaInfo[i]);
+        }
+
+;    </script>
+</body>
+</html>
