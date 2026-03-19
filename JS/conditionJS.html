@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //conditional statements to perform different actions based on different conditions, controlling the flow of a program
+
+        //if...
+        let age=19;
+        if(age<18){
+            console.log("Not Eligible for vote casting");
+        }
+        console.log("Eligible for vote casting");
+
+        //if...else......
+        let myAge=24;
+        if(myAge>=18){
+            console.log("You can do the vote casting");
+        }
+        else{
+            console.log("wait for next time");
+        }
+
+        //switch statement
+
+
+        let grade='C';
+        switch(grade){
+            case 'A':result="first division";
+            break;
+            case 'B':result="Second division";
+            break;
+            case 'C':result="Third division";
+            break;
+            default:result="Fail";
+
+        }
+        console.log(result);
+
+        //else if statement
+
+        let marks=60;
+        if(marks<=33){
+            console.log("Grade Third");
+        }
+        else if(marks>33 && marks<60){
+            console.log("Grade Second");
+        }
+        else{
+            console.log("Grade First");
+        }
+    </script>
+</body>
+</html>

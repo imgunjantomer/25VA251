@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Check your age to cast the vote</h2>
+    <form action="">
+        <input type="number" placeholder="Enter your age" name="age" id="age"/>
+        <input type="submit" value="submit" onclick="result()" />
+    </form>
+<input type="text" placeholder="Enter your name" id="inputData"/>
+<h2 id="text"></h2>
+<button onbclick="ChangeColor()">Click on me!</button>
+    <script>
+    function result(){
+        let myAge = document.getElementById('age').value;
+        if(myAge>=18){
+            alert("Eligible")
+        }
+        else{
+            alert("Not Eligible");
+        }
+    }
+    console.log(result);
+
+    function changecolor(){
+        let inputValue=document.getElementById("inputData").value;
+
+        let inputText=document.getElementById('text');
+        inputText.innerHTML=inputValue;
+        inputText.style.color="red";
+
+        //random color
+        inputText.style.backgroungColor="#" +Math.floor(MAth.random()* 16777215).toString(16);
+
+        let para=document.getElementByTagName("p")[0];
+        function changeColor(){
+            
+        }
+    }
+    </script>
+</body>
+</html>
